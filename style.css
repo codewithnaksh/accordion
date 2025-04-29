@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.accordion{
+    width: 100%;
+}
+.accordion-item{
+    margin-bottom: 1rem;
+}
+.accordion-header{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    cursor:pointer;
+    background-color: #f0f0f0;
+}
+.accordion-content{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.accordion-header:hover + .accordion-content{
+    max-height: 50px;
+}
